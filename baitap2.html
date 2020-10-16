@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //BT1: Hiển thị ma trận ra màn hình.
+    let arr = [
+        [-3, 5, 7, -9, 1],
+        [2, -4, 6, -8, 0],
+        [4, 7, -9, 10, 5],
+        [9, 8, -7, 4, -5],
+    ];
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         document.write(arr[i][j] + " ")
+    //     }
+    //     document.write("<br>")
+    // }
+
+    //BT2: Tính tổng các giá trị trong mảng 2 chiều
+    // let tong = 0;
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         tong += arr[i][j];
+    //     }
+    // }
+    // document.write(tong);
+
+
+    //BT3: Thay đổi các số âm trong mảng 2 chiều thành 0
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         if (arr[i][j] < 0) {
+    //             arr[i][j] = 0;
+    //         }
+    //         document.write(arr[i][j]+",")
+    //     }
+    //     document.write('<br>')
+    // }
+
+
+    //BT4: Tìm các giá trị lớn nhất của mỗi hàng
+    // for (let i = 0; i < arr.length; i++) {
+    //     let max = arr[i][0];
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         if (arr[i][j] > max) {
+    //             max = arr[i][j];
+    //         }
+    //     }
+    //     document.write(max + "<br>")
+    // }
+
+
+    //BT5: Tính trung bình cộng các hàng trong mảng 2 chiều
+    for (let i = 0; i < arr.length; i++) {
+        let total = arr[i][0];
+        for (let j = 0; j < arr[i].length; j++) {
+         total+=arr[i][j]/arr[i].length
+        }
+        document.write(total + "<br>");
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [[1, -6, 8, 3, 9],
+        [8, 3, -1, 7, -5,],
+        [-2, 5, 0, 9, 8],
+        [1, -4, 6, 3, 9],
+    ];
+    //bai tap 2 :Tính tổng các giá trị trong mảng 2 chiều
+
+    // let tong = 0;
+    // for (let i = 0; i < array.length; i++) {
+    //     for (let j = 0; j < array[i].length; j++) {
+    //         tong += array[i][j];
+    //     }
+    // }
+    //
+    // document.write(tong);
+
+
+    //bai tap 1: Hiển thị ma trận ra màn hình.
+
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         document.write(arr[i][j] + '&nbsp&nbsp&nbsp&nbsp&nbsp');
+    //     }
+    //     document.write("<br>");
+    // }
+
+
+    //BT3: Thay đổi các số âm trong mảng 2 chiều thành 0
+    // for (let i = 0; i < array.length; i++) {
+    //     for (let j = 0; j < array[i].length; j++) {
+    //         if (array[i][j] < 0) {
+    //             array[i][j] = 0;
+    //         }
+    //         document.write(array[i][j] + ",");
+    //     }
+    //
+    //     document.write("<br>")
+    // }
+
+    //BT4: Tìm các giá trị lớn nhất của mỗi hàng
+    // for (let i = 0; i < array.length; i++) {
+    //     let max = array[i][0];
+    //     for (let j = 0; j < array[i].length; j++) {
+    //         if (array[i][j] > max) {
+    //             max = array[i][j];
+    //         }
+    //     }
+    //     document.write(max + "<br>")
+    // }
+    //
+    // //BT5: Tính trung bình cộng các hàng trong mảng 2 chiều
+    for (let i = 0; i < array.length; i++) {
+        let total = array[i][0];
+        for (let j = 0; j < array[i].length; j++) {
+            total += array[i][j] / array[i].length;
+        }
+        document.write(total +"<br>")
+    }
+
+
+
+</script>
+
+</body>
+</html>
